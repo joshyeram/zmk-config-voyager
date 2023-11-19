@@ -1,0 +1,46 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+#define DEFAULT 0
+#define NUMBER 1
+#define SYMBOL 2
+#define SETTINGS 3
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+// ----------------------------------------------------------------------------------------------------
+//           |  esc     |   Q     |   W     |   E     |   R     |   T   |          |   Y      |   U    |   I      |   O    |   P      |   bs   | 
+//           |  tab     |   A     |   S     |   D     |   F     |   G   |          |   H      |   J    |   K      |   L    |   ;      |   '    |
+//           | LSHIFT   |   Z     |   X     |   C     |   V     |   B   |          |   N      |   M    |   ,      |   .    |   /      | RSHIFT |
+//           |          |         |         | ctrl    | space   |  sym  |          |  num     |  alt   |          |        |          |        |
+
+        default_layer {
+            bindings = <
+                &kp ESC    &kp Q     &kp W    &kp E     &kp R     &kp T             &kp Y      &kp U    &kp I     &kp O     &kp P     &kp BSPC
+                &kp TAB    &kp A     &kp S    &kp D     &kp F     &kp G             &kp H      &kp J    &kp K     &kp L     &kp SEMI  &kp APOS
+                &kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B             &kp N      &kp M    &kp COMMA &kp DOT   &kp SLASH &kp RSHFT
+                &kp 0      &kp 0     &kp 0    &kp LCTRL &kp SPACE &mo SYMBOL        &mo NUMBER &kp LALT &kp 0     &kp 0     &kp 0     &kp 0
+            >;
+        };
+
+// ----------------------------------------------------------------------------------------------------
+//           |  esc     |   Q     |   W     |   E     |   R     |   T   |          |   Y      |   U    |   I      |   O    |   P      |   bs   | 
+//           |  tab     |   A     |   S     |   D     |   F     |   G   |          |   H      |   J    |   K      |   L    |   ;      |   '    |
+//           | LSHIFT   |   Z     |   X     |   C     |   V     |   B   |          |   N      |   M    |   ,      |   .    |   /      | RSHIFT |
+//           |          |         |         | ctrl    | space   |  sym  |          |  num     |  alt   |          |        |          |        |
+
+        number_layer {
+            bindings = <
+                &kp ESC    &kp Q     &kp W    &kp E     &kp R     &kp T             &kp Y      &kp U    &kp I     &kp O     &kp P     &kp BSPC
+                &kp TAB    &kp A     &kp S    &kp D     &kp F     &kp G             &kp H      &kp J    &kp K     &kp L     &kp SEMI  &kp APOS
+                &kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B             &kp N      &kp M    &kp COMMA &kp DOT   &kp SLASH &kp RSHFT
+                &kp 0      &kp 0     &kp 0    &kp LCTRL &kp SPACE &mo SYMBOL        &mo NUMBER &kp LALT &kp 0     &kp 0     &kp 0     &kp 0
+            >;
+        };
+
+
+    };
+};

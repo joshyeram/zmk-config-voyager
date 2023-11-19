@@ -32,14 +32,14 @@
 //           | LSHIFT   |   Z     |   X     |   C     |   V     |   B   |          |   N      |   M    |   ,      |   .    |   /      | RSHIFT |
 //           |          |         |         | ctrl    | space   |  sym  |          |  num     |  alt   |          |        |          |        |
 
- //       number_layer {
- //           bindings = <
- //               &kp ESC    &kp Q     &kp W    &kp E     &kp R     &kp T             &kp Y      &kp U    &kp I     &kp O     &kp P     &kp BSPC
- //               &kp TAB    &kp A     &kp S    &kp D     &kp F     &kp G             &kp H      &kp J    &kp K     &kp L     &kp SEMI  &kp APOS
- //               &kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B             &kp N      &kp M    &kp COMMA &kp DOT   &kp SLASH &kp RSHFT
- //               &kp 0      &kp 0     &kp 0    &kp LCTRL &kp SPACE &mo SYMBOL        &mo NUMBER &kp LALT &kp 0     &kp 0     &kp 0     &kp 0
- //           >;
- //       };
+        number_layer {
+            bindings = <
+                &kp TILDE  &kp 1     &kp 2    &kp 3     &kp 4     &kp 5             &kp 6      &kp 7    &kp 8     &kp 9     &kp 0     &kp BSPC
+                &kp TAB    &kp A     &kp S    &kp D     &kp F     &kp G             &kp H      &kp J    &kp K     &kp L     &kp SEMI  &kp APOS
+                &kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B             &kp N      &kp M    &kp COMMA &kp DOT   &kp SLASH &kp RSHFT
+                &kp 0      &kp 0     &kp 0    &kp LCTRL &kp SPACE &trans        &mo NUMBER &kp LALT &kp 0     &kp 0     &kp 0     &kp 0
+            >;
+        };
 
 
     };

@@ -42,10 +42,10 @@
 
         symbol_layer {
             bindings = <
-                &kp ESC    &bt BT_CLR &bt BT_PRV &bt BT_NXT &none      &bootloader       &kp LBKT     &kp RBKT   &kp MINUS &kp EQUAL  &kp BSLH  &kp BSPC
-                &kp LOCK   &none      &none      &none      &none      &none             &kp K_VOL_UP &kp K_PREV &kp UP    &kp K_NEXT &none     &kp ENTER
-                &kp LSHFT  &none      &none      &none      &none      &none             &kp C_VOL_DN &kp LEFT   &kp DOWN  &kp RIGHT  &none     &kp RSHFT
-                &none      &none      &none      &kp LCTRL  &kp SPACE  &trans            &kp K_PP     &kp LALT   &none     &none      &none     &none
+                &kp ESC    &bt BT_CLR  &bt BT_PRV &bt BT_NXT &none      &kp F5            &kp LBKT     &kp RBKT   &kp MINUS &kp EQUAL  &kp BSLH  &kp BSPC
+                &kp CAPS   &none       &none      &none      &none      &none             &kp K_VOL_UP &kp K_PREV &kp UP    &kp K_NEXT &none     &kp ENTER
+                &kp LSHFT  &bootloader &none      &none      &none      &none             &kp C_VOL_DN &kp LEFT   &kp DOWN  &kp RIGHT  &none     &kp RSHFT
+                &none      &none       &none      &kp LCTRL  &kp SPACE  &trans            &kp K_PP     &kp LALT   &none     &none      &none     &none
             >;
         };
 

@@ -42,10 +42,7 @@
         >;
     };
 
-    nice_view_spi: &spi0 {
-        compatible = "nordic,nrf-spim";
-        cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
-    };
+
 };
 
 //<&gpio0 6 GPIO_ACTIVE_HIGH>,

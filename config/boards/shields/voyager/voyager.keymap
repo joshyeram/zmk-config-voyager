@@ -6,9 +6,7 @@
 #define NUMBER 1
 #define SYMBOL 2
 
-&nice_view_spi {
-    cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
-};
+
 
 / {
     keymap {
@@ -57,4 +55,8 @@
     };
 
   
+};
+
+&nice_view_spi {
+    cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
 };

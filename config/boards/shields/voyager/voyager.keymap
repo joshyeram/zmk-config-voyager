@@ -5,7 +5,6 @@
 #define DEFAULT 0
 #define NUMBER 1
 #define SYMBOL 2
-#define SETTINGS 3
 
 / {
     keymap {
@@ -22,7 +21,7 @@
                 &kp ESC    &kp Q     &kp W    &kp E     &kp R     &kp T             &kp Y      &kp U    &kp I     &kp O     &kp P     &kp BSPC
                 &kp TAB    &kp A     &kp S    &kp D     &kp F     &kp G             &kp H      &kp J    &kp K     &kp L     &kp SEMI  &kp APOS
                 &kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B             &kp N      &kp M    &kp COMMA &kp DOT   &kp SLASH &kp RSHFT
-                &kp 0      &kp 0     &kp 0    &kp LCTRL &kp SPACE &mo SYMBOL        &mo NUMBER &kp LALT &kp 0     &kp 0     &kp 0     &kp 0
+                &none      &none     &none    &kp LCTRL &kp SPACE &mo SYMBOL        &mo NUMBER &kp LALT &none     &none     &none     &none
             >;
         };
 
@@ -34,10 +33,19 @@
 
         number_layer {
             bindings = <
-                &kp TILDE  &kp 1     &kp 2    &kp 3     &kp 4     &kp 5             &kp 6      &kp 7    &kp 8     &kp 9     &kp 0     &kp BSPC
-                &kp TAB    &kp A     &kp S    &kp D     &kp F     &kp G             &kp H      &kp J    &kp K     &kp L     &kp SEMI  &kp APOS
-                &kp LSHFT  &kp Z     &kp X    &kp C     &kp V     &kp B             &kp N      &kp M    &kp COMMA &kp DOT   &kp SLASH &kp RSHFT
-                &kp 0      &kp 0     &kp 0    &kp LCTRL &kp SPACE &trans        &mo NUMBER &kp LALT &kp 0     &kp 0     &kp 0     &kp 0
+                &kp ESC    &kp 1     &kp 2    &kp 3     &kp 4     &kp 5             &kp 6      &kp 7    &kp 8     &kp 9     &kp 0     &kp DEL
+                &none      &none     &none    &none     &none     &none             &none      &none    &none     &none     &none     &none
+                &kp LSHFT  &none     &none    &none     &none     &none             &none      &none    &none     &none     &none     &kp RSHFT
+                &none      &none     &none    &kp LCTRL &kp SPACE &none             &trans     &kp LALT &none     &none     &none     &none
+            >;
+        };
+
+        symbol_layer {
+            bindings = <
+                &kp ESC    &bt BT_CLR &bt BT_PRV &bt BT_NXT &none      &bootloader       &kp LBKT     &kp RBKT   &kp MINUS &kp EQUAL  &kp BSLH  &kp BSPC
+                &kp LOCK   &none      &none      &none      &none      &none             &kp K_VOL_UP &kp K_PREV &kp UP    &kp K_NEXT &none     &kp ENTER
+                &kp LSHFT  &none      &none      &none      &none      &none             &kp C_VOL_DN &kp LEFT   &kp DOWN  &kp RIGHT  &none     &kp RSHFT
+                &none      &none      &none      &kp LCTRL  &kp SPACE  &trans            &kp K_PP     &kp LALT   &none     &none      &none     &none
             >;
         };
 

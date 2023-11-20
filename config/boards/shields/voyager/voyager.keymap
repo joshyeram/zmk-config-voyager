@@ -47,7 +47,7 @@
                 &kp ESC    &bt BT_CLR  &bt BT_PRV &bt BT_NXT &none      &kp F5            &kp LBKT     &kp RBKT   &kp MINUS &kp EQUAL  &kp BSLH  &kp BSPC
                 &kp CAPS   &none       &none      &none      &none      &none             &kp C_VOL_UP &kp C_PREV &kp UP    &kp C_NEXT &none     &kp ENTER
                 &kp LSHFT  &bootloader &none      &none      &none      &none             &kp C_VOL_DN &kp LEFT   &kp DOWN  &kp RIGHT  &none     &kp RSHFT
-                &none      &none       &none      &kp LCTRL  &kp SPACE  &trans            &kp K_PP     &kp LALT   &none     &none      &none     &none
+                &none      &none       &none      &kp LCTRL  &kp SPACE  &trans            &kp C_PP     &kp LALT   &none     &none      &none     &none
             >;
         };
 

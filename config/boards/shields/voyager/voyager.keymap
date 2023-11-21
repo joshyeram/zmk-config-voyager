@@ -37,17 +37,17 @@
         number_layer {
             bindings = <
                 &kp ESC    &kp N1    &kp N2  &kp N3                &kp N4    &kp N5            &kp N6     &kp N7          &kp N8         &kp N9          &kp N0    &kp DEL
-                &none      &none     &none   &mmv C_AC_SCROLL_UP   &none     &none             &none      &mkp LCLK       &mmv MOVE_UP   &mkp RCLK       &none     &none
-                &kp LSHFT  &none     &none   &mmv C_AC_SCROLL_DOWN &none     &none             &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &kp RSHFT
+                &none      &none     &none   &kp K_SCROLL_UP       &none     &none             &none      &mkp LCLK       &mmv MOVE_UP   &mkp RCLK       &none     &none
+                &kp LSHFT  &none     &none   &kp K_SCROLL_DOWN     &none     &none             &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &kp RSHFT
                 &none      &none     &none   &kp LCTRL             &kp SPACE &none             &trans     &kp LALT        &none          &none           &none     &none
             >;
         };
 
         symbol_layer {
             bindings = <
-                &kp ESC    &bt BT_CLR  &bt BT_PRV &bt BT_NXT &none      &kp F5            &kp LBKT     &kp RBKT   &kp MINUS &kp EQUAL  &kp BSLH  &kp BSPC
+                &kp ESC    &bt BT_CLR  &bt BT_PRV &bt BT_NXT &kp F4     &kp F5            &kp LBKT     &kp RBKT   &kp MINUS &kp EQUAL  &kp BSLH  &kp DEL
                 &kp CAPS   &none       &none      &none      &none      &none             &kp C_VOL_UP &kp C_PREV &kp UP    &kp C_NEXT &none     &kp ENTER
-                &kp LSHFT  &bootloader &none      &none      &none      &none             &kp C_VOL_DN &kp LEFT   &kp DOWN  &kp RIGHT  &none     &kp RSHFT
+                &kp LSHFT  &bootloader &none      &none      &none      &kp LGUI          &kp C_VOL_DN &kp LEFT   &kp DOWN  &kp RIGHT  &none     &kp RSHFT
                 &none      &none       &none      &kp LCTRL  &kp SPACE  &trans            &kp C_PP     &kp LALT   &none     &none      &none     &none
             >;
         };
